@@ -116,7 +116,7 @@ public extension Element {
 				result += "\(prefix)**" + text + "**\(postfix)"
 			case "a":
 				if let destination = tag.attributes["href"] {
-					result += "[\(output(children, options: options))](\(destination))"
+					result += "\(destination)"
 				} else {
 					result += output(children, options: options)
 				}
